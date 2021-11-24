@@ -1,20 +1,23 @@
-// Hello World.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include <iostream> //Library (Input Output stream)
+using namespace std; // So we dont need to use it every that you'll be using this namespace
 
-#include <iostream>
-
-int main()
+int main() // beggining of the program
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n"; 
+    // std => namespaces provide scope for the identifiers to avoid collisions when using multiple libraries
+    
+    cout << "Input your annual salary:\n";
+
+    float annualSalary;
+    cin >> annualSalary;
+
+    float monthlySalary = annualSalary / 12;
+
+
+    cout << "Your mothly salary is " << monthlySalary << endl;
+    cout << "In ten years you will earn " << annualSalary * 10;
+
+    char character = 'a'; // character variable is used with single ' '
+
+    system("pause>0"); // gets rid of junk messages after the hello world
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
